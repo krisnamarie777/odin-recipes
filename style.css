@@ -6,15 +6,16 @@ Odin Recipes CSS
 html {
     margin: 0;
 }
+
+
 body {
     font-family: Tahoma, sans-serif;
-    margin: .5em;
-
+    margin: 0 auto;
 }
 
 
 h1 {
-    color: oldlace;
+    color: whitesmoke;
     background: seagreen;
     font-family: Verdana, sans-serif;
     font-size: 2em;
@@ -22,22 +23,41 @@ h1 {
     text-align: center;
 }
 
+a {
+    color: firebrick;
+}
 
+a:visited {
+    color: seagreen;
+}
 .recipe-list  {
-    list-style-type:square;
+    list-style-type:none;
     font-size: 1.45em;
     font-weight: 600;
 }
 
-a {
-    color: forestgreen;
+
+.recipe-list li {
+    display: inline-block;
+    margin: 4px;
+    padding: 8px 16px;
+    background:  firebrick;
+    color: whitesmoke;
+    font-weight: 700;
 }
 
-img {
-    max-width: 50vw;
-    border: double salmon 8px; /* Not sure we learned that yet */
+.recipe-list a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+figure {
+    box-sizing: border-box;
+    max-width: 48%;
+    border: double firebrick 8px;
     display: block;
-    margin: .45em auto;/* not sure we learned block align or centering either */
+    padding: 8px;
 }
 
 figcaption {
@@ -45,8 +65,15 @@ figcaption {
     font-style: italic;
 }
 
-.description, .ingredients, .directions, .disclaimer {
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+h2, h3, h4 {
     font-family: Verdana, sans-serif;
     font-weight: 800;
-    color: brown;
+    color: firebrick;
 }
